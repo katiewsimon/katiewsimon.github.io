@@ -21,32 +21,44 @@
           // Save a reference to the element
           var $this = $(this);
  
+          // define image redraw fn
+
+          function img_redraw(){
+
+            var scrollTop = $(window).scrollTop();
+            var offset = $this.offset().top;
+            var height = $this.outerHeight();
+ 
+            // Check if above or below viewport
+            if (offset + height <= scrollTop || offset >= scrollTop + windowHeight) {
+              return;
+            }
+ 
+            var yBgPosition = Math.round((offset - scrollTop) * settings.speed);
+ 
+            // Apply the Y Background Position to Set the Parallax Effect
+            var bg = $this.css('background-position').split(' ');
+            bg[1] = yBgPosition + 'px';
+            $this.css('background-position', bg.join(' '));
+                
+            }
+
           // Set up Scroll Handler
           $(document).scroll(function(){
- 
-                var scrollTop = $(window).scrollTop();
-                      var offset = $this.offset().top;
-                      var height = $this.outerHeight();
- 
-        // Check if above or below viewport
-      if (offset + height <= scrollTop || offset >= scrollTop + windowHeight) {
-        return;
-      }
- 
-      var yBgPosition = Math.round((offset - scrollTop) * settings.speed);
- 
-                 // Apply the Y Background Position to Set the Parallax Effect
-          $this.css('background-position', 'center ' + yBgPosition + 'px');
-                
+            img_redraw();
+          });
+
+          $(document).ready(function(){
+            img_redraw();
           });
         });
     }
 }(jQuery));
 
 $('.bg-1,.bg-3').parallax({
-  speed : 0.15
+  speed : 0.60
 });
 
 $('.bg-2').parallax({
-  speed : 0.25
+  speed : 0.40
 });

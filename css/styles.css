@@ -3,23 +3,35 @@
 }
 
 section {
-  height:500px;
+  height:auto;
+  max-height:500px;
+  min-height:264px;
   padding-top:50px;
-  padding-bottom:50px;
-  overflow:auto;
+  padding-bottom:100px;
+  overflow: hidden;
 }
 
 .bg-1 {
-  background: url('/images/katie_crop.jpg') no-repeat 55% 0% fixed;
+  background: url('/images/katie_crop_bright.jpg') no-repeat 60% 0% fixed;
   color:#333;
-  background-size:cover;
+  background-size:100%;
 }
 
 .bg-2 {
-  background: url('/images/taxi.jpg') no-repeat bottom center fixed;
+  background: url('/images/taxi_dark.jpg') no-repeat 70% top fixed;
   /* background: #1993E4; */
   color:#fff;
   background-size:cover;
+  padding-top:100px;
+}
+
+.bg-2 p {/*
+  background: rgba(255,255,255,0.8);
+  padding-top:10px;
+
+  text-shadow: 2px 2px #333;
+  text-align: right; */
+  font-size: 24px; 
 }
 
 .bg-3 {
@@ -40,10 +52,18 @@ background: url('/images/yoga.jpg') no-repeat bottom center fixed;
 color:#efefef;
 }
 
+.top-section{
+  margin-top:9%;
+}
+
 /* Fonts */
 
 p, h1, h2, h3, h4, h5, h6{
   font-family: 'Noto Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-weight: bold;
 }
 
 h1{
@@ -56,4 +76,5 @@ p {
 
 p.lead {
   font-size: 1.7vmax;
+  font-weight: bold;
 }

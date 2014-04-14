@@ -1,3 +1,7 @@
+section{
+  min-height: 150px;
+}
+
 .bg-1{
-  background: #aaa;
+  height:100px;
 }

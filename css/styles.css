@@ -1,0 +1,59 @@
+.divider {
+  height:50px;
+}
+
+section {
+  height:500px;
+  padding-top:50px;
+  padding-bottom:50px;
+  overflow:auto;
+}
+
+.bg-1 {
+  background: url('/images/katie_crop.jpg') no-repeat 70% 0% fixed;
+  color:#333;
+  background-size:cover;
+}
+
+.bg-2 {
+  background: url('/images/taxi.jpg') no-repeat bottom center fixed;
+  /* background: #1993E4; */
+  color:#fff;
+  background-size:cover;
+}
+
+.bg-3 {
+background: url('/images/yoga.jpg') no-repeat bottom center fixed;
+  color:#fff;
+  background-size:cover;
+}
+
+#footer {
+  height: 60px;
+  background-color:#585858;
+  margin-top:50px;
+  padding-top:20px;
+  padding-bottom:20px;
+}
+
+#footer a {
+color:#efefef;
+}
+
+/* Fonts */
+
+p, h1, h2, h3, h4, h5, h6{
+  font-family: 'Noto Sans', sans-serif;
+}
+
+h1{
+  font-size: 60px;
+}
+
+p {
+  font-size: 1.4em;
+}
+
+p.lead {
+  font-size: 23px;
+}

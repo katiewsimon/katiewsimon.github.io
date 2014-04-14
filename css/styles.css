@@ -12,7 +12,7 @@ section {
 }
 
 .bg-1 {
-  background: url('/images/katie_crop_bright.jpg') no-repeat 60% 0% fixed;
+  background: url('/images/katie_crop_bright.jpg') no-repeat 65% 0% fixed;
   color:#333;
   background-size:100%;
 }
@@ -66,7 +66,7 @@ h1, h2, h3, h4, h5, h6{
   font-weight: bold;
 }
 
-h1{
+.top-section h1{
   font-size: 4.5vmax;
 }
 
@@ -75,6 +75,6 @@ p {
 }
 
 p.lead {
-  font-size: 1.7vmax;
+  font-size: 1.6vmax;
   font-weight: bold;
 }

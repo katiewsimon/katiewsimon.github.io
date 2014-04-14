@@ -55,10 +55,14 @@
     }
 }(jQuery));
 
-$('.bg-1,.bg-3').parallax({
+$('.bg-1').parallax({
   speed : 0.60
 });
 
 $('.bg-2').parallax({
   speed : 0.60
+});
+
+$('.bg-3').parallax({
+  speed : 0.35
 });

@@ -25,19 +25,12 @@ section {
   padding-top:100px;
 }
 
-.bg-2 p {/*
-  background: rgba(255,255,255,0.8);
-  padding-top:10px;
-
-  text-shadow: 2px 2px #333;
-  text-align: right; */
-  font-size: 24px; 
-}
 
 .bg-3 {
-background: url('/images/yoga.jpg') no-repeat bottom center fixed;
+  background: url('/images/yoga_crop_min.jpg') no-repeat bottom center fixed;
   color:#fff;
   background-size:cover;
+  padding-bottom:400px;
 }
 
 #footer {
@@ -77,4 +70,8 @@ p {
 p.lead {
   font-size: 1.6vmax;
   font-weight: bold;
+}
+
+section p{
+  font-size: 24px; 
 }

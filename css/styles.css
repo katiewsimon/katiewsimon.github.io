@@ -10,7 +10,7 @@ section {
 }
 
 .bg-1 {
-  background: url('/images/katie_crop.jpg') no-repeat 70% 0% fixed;
+  background: url('/images/katie_crop.jpg') no-repeat 60% 0% fixed;
   color:#333;
   background-size:cover;
 }

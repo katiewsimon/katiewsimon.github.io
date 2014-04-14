@@ -64,5 +64,4 @@ $('.bg-2').parallax({
 });
 
 $('.bg-3').parallax({
-  speed : 0.35
-});
+  speed : 0.70

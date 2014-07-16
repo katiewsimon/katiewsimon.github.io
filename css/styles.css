@@ -33,8 +33,9 @@ section {
   padding-bottom:400px;
 }
 
+
 #footer {
-  height: 60px;
+  height: 80px;
   background-color:#585858;
   margin-top:50px;
   padding-top:20px;
@@ -42,7 +43,12 @@ section {
 }
 
 #footer a {
-color:#efefef;
+  color:#efefef;
+}
+
+#footer p {
+  font-size:1em;
+  color: #999;
 }
 
 .top-section{
@@ -52,7 +58,7 @@ color:#efefef;
 /* Fonts */
 
 p, h1, h2, h3, h4, h5, h6{
-  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Droid Serif', serif;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -74,4 +80,8 @@ p.lead {
 
 section p{
   font-size: 24px; 
+}
+
+.contact-inner{
+
 }
